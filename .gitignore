@@ -1,0 +1,11 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Packaging artifacts (no build step; we just zip the addon folder)
+*.zip
+dist/
+release/
