@@ -18,10 +18,14 @@ target's name.
 Copy the `RPPhrases` folder into the Forever client's
 `Interface/AddOns/` directory (under `_forever_`, or `_retail_` for Midnight).
 
+Requires [Ace3](https://www.wowace.com/projects/ace3) for the GUI (declared as
+an optional dependency — without it, `/rp` prints a hint and rules stay in
+`RPPhrasesDB`).
+
 ## Usage
 
-`/rp` opens the config panel (requires Ace3). Rules are stored directly in
-`RPPhrasesDB`:
+`/rp` opens the config panel. Add a spell, give it phrases, set each phrase's
+chance and channel. Rules are stored directly in `RPPhrasesDB`:
 
 ```lua
 RPPhrasesDB = {
@@ -55,7 +59,7 @@ sequenceDiagram
 
 - [x] Manifest + entry point (`RPPhrases.toc`, `Init.lua`)
 - [x] Cast -> phrase engine (`Core.lua`)
-- [ ] Config GUI (Ace3, `GUI.lua` — skeleton only)
+- [x] Config GUI (Ace3, `GUI.lua` — full CRUD via `/rp`)
 - [ ] In-game validation against the live Forever client API
 
 ## Forever API notes
