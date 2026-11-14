@@ -1,0 +1,15 @@
+## Interface: 16001
+## Title: RP Phrases
+## Notes: Roleplay chat lines that fire when you cast a spell.
+## Author: RGonzalezTech
+## Version: 0.1.0
+## SavedVariables: RPPhrasesDB
+## OptionalDeps: Ace3
+## X-Category: Roleplay, Chat
+##
+## NOTE: Interface 16001 is the Forever Beta/Test build. Bump this to the
+## live Forever interface number (GetBuildInfo() in-game) at launch.
+
+Init.lua
+Core.lua
+GUI.lua
